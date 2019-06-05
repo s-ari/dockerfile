@@ -52,6 +52,7 @@ RUN apt-get update && \
     tar zxf packer-builder-alicloud-ecs_linux-amd64.tgz && \
 
     # Setup Alibaba Cloud CLI
+    cd /root/bin && \
     wget http://aliyun-cli.oss-cn-hangzhou.aliyuncs.com/aliyun-cli-linux-3.0.2-amd64.tgz && \
     tar xzf aliyun-cli-linux-3.0.2-amd64.tgz && \
     rm -f aliyun-cli-linux-3.0.2-amd64.tgz && \
